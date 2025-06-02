@@ -52,7 +52,8 @@ h1{font-size: 20px;margin: 0.8em;}
 
     background: rgba(5, 5, 5, 0.87);
     border-radius: 16px;
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.562) inset,-10px -10px 10px rgba(255, 255, 255, 0.048) inset;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.562) inset,-10px -10px 10px rgba(255, 255, 255, 0.048) inset;
+
     border: 1px solid rgba(5, 5, 5, 0.815);
 }
 table{
@@ -60,21 +61,42 @@ table{
 }
 td{
     background-color: rgb(20, 20, 20);
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
+    font-size: 90%;
+    letter-spacing: 0.5px;
 }
 input{
     width: 3em;
     text-align: center;
     background-color: white;
+    border-radius: 5px;
+    border: 1px solid #4a4a4a;
+    padding: 1px;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+    outline: none;
+    margin: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 .boton{
     background-color:  rgb(53, 53, 53);
     border-radius: 5px; 
     margin: 0.5em auto;
+    padding: 5px 10px;
+    border: 1px solid #4a4a4a;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.boton:hover{
+    background-color: rgb(70, 70, 70);
 }
 .boton:active{
-    transform: scale(1.2);
+    transform: scale(1.1);
+    background-color: #007bff;
 }
 @media(min-width: 500px){
     .contenedor{
