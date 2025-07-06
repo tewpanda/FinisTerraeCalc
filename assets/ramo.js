@@ -138,5 +138,5 @@ function eliminar(){
     localStorage.removeItem(nombre);
     localStorage.setItem("ramos",JSON.stringify(ramos));
     blurAll();
-    goTo("CalculadoraFinis.html#Ramos");
+    goTo("#Ramos");
 }
